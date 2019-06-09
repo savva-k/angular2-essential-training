@@ -35,6 +35,9 @@ h2 {
   height: 24px;
   fill: #bdc2c5;
 }
+.is-favorite {
+  fill: red;
+}
 .delete {
   display: block;
   background-color: #ec4342;
