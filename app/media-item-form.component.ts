@@ -29,10 +29,15 @@ export class MediaItemFormComponent {
       return null;
     }
     let year = parseInt(control.value);
-    let minYear = 1900;
-    let maxYear = 2100;
+    let minYear = 1905;
+    let maxYear = 2099;
 
-    return year >= minYear && year <= maxYear ? null : { 'year': true };
+    return year >= minYear && year <= maxYear ? null : { 
+      'year': {
+        'min': minYear,
+        'max': maxYear
+      } 
+    };
   }
 
   onSubmit(mediaItem) {
