@@ -38,6 +38,10 @@ h2 {
 .is-favorite {
   fill: red;
 }
+.is-favorite-hovering {
+  fill: tomato;
+  cursor: pointer;
+}
 .delete {
   display: block;
   background-color: #ec4342;
